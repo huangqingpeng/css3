@@ -1,0 +1,287 @@
+html,
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body,
+header {
+	width: 100%;
+	overflow: hidden;
+}
+
+.navBox {
+	display: flex;
+	display: -webkit-flex;
+	height: 50px;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+}
+
+.navBox .floatleft {
+	margin-left: 60px;
+	height: 100%;
+	/*width:150px;*/
+}
+
+.navBox .floatleft .logo {
+	margin-top: 12px;
+	height: 25px;
+	width: 110px;
+	float: left;
+}
+
+.navBox .mid {
+	flex: 1;
+}
+
+.navBox .floatright {
+	margin-right: 60px;
+	height: 100%;
+	/*width:150px;*/
+}
+
+.floatright .pad-box {
+	height: 100%;
+}
+
+.floatright .pad-box>span {
+	cursor: pointer;
+	height: 40px;
+	width: 35px;
+	line-height: 40px;
+	display: inline-block;
+	float: left;
+	text-align: center;
+}
+
+.floatright .pad-box>span:hover {
+	background: #e6e6e6;
+	color: #326696;
+}
+
+.navBox .floatleft .in_box {
+	float: left;
+	margin-top: 12px;
+	height: 25px;
+	line-height: 25px;
+	width: 234px;
+	display: block;
+}
+
+.navBox .floatleft .in_box a {
+	font-size: 16px;
+	color: #666;
+	font-weight: bold;
+	display: block;
+	float: left;
+	margin-left: 40px;
+}
+
+.floatright .pc-box .search-box {
+	float: left;
+	width: 270px;
+	height: 32px;
+	border: 1px solid #999;
+	margin-top: 6px;
+	inline-block;
+}
+
+.floatright .pc-box .search-box input {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	outline: none;
+	border: none;
+}
+
+.floatright .pc-box .search-box button {
+	background: #fff;
+	float: right;
+	height: 30px;
+	line-height: 30px;
+	outline: none;
+	border: none;
+}
+
+.floatright .pc-box .search-box button img {
+	height: 30px;
+	cursor: pointer;
+}
+
+.floatright .pc-box>span {
+	/*padding-top:12px;*/
+	height: 45px;
+	width: 38px;
+	line-height: 45px;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+	text-align: center;
+}
+
+.floatright .pc-box>span:hover {
+	background: #e6e6e6;
+	color: #326696;
+}
+
+.sign-in {
+	font-size: 14px;
+	color: #666;
+}
+
+.selectBox {
+	border: 1px solid #000;
+	width: 300px;
+	height: 40px;
+	margin: 10px auto;
+	display: none;
+}
+
+.selectBox input {
+	float: left;
+	height: 38px;
+	line-height: 38px;
+	outline: none;
+	border: none;
+}
+
+.selectBox button {
+	background: #fff;
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	outline: none;
+	border: none;
+}
+
+.selectBox button img {
+	height: 30px;
+	cursor: pointer;
+}
+
+.menu-col {
+	position: absolute;
+	right: -200px;
+	top: 50px;
+	width: 200px;
+	transition: all 0.2s;
+}
+
+.menu-col.show {
+	position: absolute;
+	right: 0px;
+	top: 50px;
+	/*display: block;*/
+	width: 200px;
+	transition: all 0.2s;
+}
+
+.menu-col p {
+	width: 190px;
+	height: 50px;
+	line-height: 50px;
+	color: #666;
+	font-size: 14px;
+	background: #eee;
+	padding-left: 10px;
+}
+
+.menu-col p:hover {
+	background: #999;
+}
+
+.banner{
+	display: flex;
+	width:100%;
+	overflow: hidden;
+}
+
+.banner .a{
+	flex:1;
+	margin:0 60px;
+	width:100%;
+	height:420px;
+}
+.banner .b{
+	flex:1;
+	width:100%;
+	height:740px;
+	display: none;
+}
+
+@media screen and (min-width:375px) {
+	.navBox .floatleft .in_box {
+		display: none;
+	}
+	.floatright .pc-box {
+		display: none;
+	}
+	.floatright .phone-box {
+		display: none;
+	}
+	.floatright .pad-box .sign-in {
+		display: none;
+	}
+	.banner .a{
+	   display: none;
+    }
+    .banner .b{
+	   display: block;
+    }
+}
+
+@media screen and (min-width:450px) {
+	.navBox .floatleft .in_box {
+		display: none;
+	}
+	.floatright .pc-box {
+		display: none;
+	}
+	.floatright .phone-box {
+		display: none;
+	}
+	.floatright .pad-box .sign-in {
+		display: block;
+	}
+	.banner .a{
+	   display: none;
+    }
+    .banner .b{
+	   display: block;
+    }
+}
+
+@media screen and (min-width:891px) {
+	.floatright .pad-box {
+		display: none;
+	}
+	.floatright .phone-box {
+		display: none;
+	}
+	.floatright .pc-box {
+		display: block;
+		height: 100%;
+	}
+	.navBox .floatleft .in_box {
+		display: block;
+	}
+	.banner .a{
+	   display: block;
+    }
+    .banner .b{
+	   display: none;
+    }
+}

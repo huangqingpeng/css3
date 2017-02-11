@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>弹性盒模型布局</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		    html,body{
+		    	height:100%;
+		    }
+			.flexBox{
+				display: flex;
+				display: -webkit-flex;/*写上兼容*/
+				height:100%;
+				background:#999999;
+				/*纵向排列  */
+				flex-direction: column;
+				-webkit-flex-direction: column;
+				
+			}
+			.flexBox div:nth-child(1){
+				background:deepskyblue;
+				/*flex: 2;
+				-webkit-flex: 2;*/
+				/*width:160px;*/
+				height:160px;
+			}
+			.flexBox div:nth-child(2){
+				flex: 1;
+				-webkit-flex: 1;
+				background: #090;
+			}
+			.flexBox div:nth-child(3){
+				/*flex: 1;
+				-webkit-flex: 1;*/
+				/*width:200px;*/
+				height:200px;
+				background: #900;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="flexBox">
+			<div class="a">a</div>
+			<div class="b">b</div>
+			<div class="c">c</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#test01{
+				width:100px;
+				height:80px;
+				background: pink;
+				position:absolute;
+				top:0px;
+				left:0px;
+				transform: translate(300px,300px);/*位移，第一个参数为水平位移，第二个参数是垂直位移*/
+			    transition:all 0.2s ease;
+			}
+			#test01:hover{
+			     background: yellow;
+			}
+			#test02{
+				width:100px;
+				height:80px;
+				margin-top:50px;
+				margin-left: 50px;
+				background: deepskyblue;
+				position:absolute;
+				top:0px;
+				left:0px;
+				transform: rotate(60deg);/*旋转，参数为角度*/
+			}
+			#test03{
+				width:100px;
+				height:80px;
+				margin-top:150px;
+				margin-left: 150px;
+				background: red;
+				position:absolute;
+				top:0px;
+				left:0px;
+				transform: scale(0.5,1.5);/*缩放，参数为1个时为缩放倍数，大于1为放大，小于1为缩小；当参数为2个时，分别控制宽高的缩放*/
+			    font-size: 14px;/*缩放时字体也跟着缩放*/
+			    color:#fff;
+			}
+			#test04{
+				width:100px;
+				height:80px;
+				margin-top:400px;
+				margin-left: 400px;
+				background: deeppink;
+				position:absolute;
+				top:0px;
+				left:0px;
+				transform: skew(-20deg,0deg);/*指定对象skew transformation（斜切扭曲）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="test01"></div>
+		<div id="test02"></div>
+		<div id="test03">给大家发回家的话可</div>
+		<div id="test04"></div>
+	</body>
+</html>

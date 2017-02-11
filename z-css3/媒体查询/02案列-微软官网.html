@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>媒体查询应用--微软官网</title>
+		<link rel="stylesheet" href="css/02-misoft.css" />
+	</head>
+	<body>
+		<header></header>
+		<nav>
+			<div class="navBox clearBoth">
+				<div class="floatleft leftNav">
+					<img  />
+					<span class="in_box">
+						<a href="javascript:;">商店</a>
+						<a href="javascript:;">产品</a>
+						<a href="javascript:;">支持</a>
+					</span>
+				</div>
+				<div class="floatright rightNav">
+					<div class="selectBox"></div>
+					<button class="btn selectBtn">搜索</button>
+					<button class="btn navBtn">菜单</button>
+				</div>
+			</div>
+		</nav>
+		<div class="search-box"></div>
+		<article></article>
+	</body>
+	<script type="text/javascript" src="dialog.js" ></script>
+	<script>
+//	    document.querySelector(".navBtn").code=true;
+	    document.querySelector(".navBtn").innavBox=null;
+		document.querySelector(".navBtn").onclick=function(){
+			var top=this.offsetTop+this.offsetHeight+10;
+			var left=this.offsetLeft
+			if(left+150>window.innerWidth){
+				left=window.innerWidth-150;
+			}
+			if(!this.innavBox){
+				this.innavBox=new Dialog({
+					width:150,
+					height:200,
+					content:'<a herf="#" style="display:block">商店</a><a herf="#" style="display:block">产品</a><a herf="#" style="display:block">支持</a>',
+					top:top,
+					left:left,
+				});
+				this.innavBox.show();
+//				this.code=false;
+			}else{
+				this.innavBox.hidde();
+//				this.code=true;
+                this.innavBox=null;
+			}
+			
+		}
+		
+		document.querySelector(".selectBtn").code=true;
+		document.querySelector(".selectBtn").onclick=function(){
+			if(this.code){
+				document.querySelector(".search-box").style.height="50px";
+			    document.querySelector(".search-box").style.opacity="1";
+			    this.code=false;
+			}else{
+				document.querySelector(".search-box").style.height="0";
+			    document.querySelector(".search-box").style.opacity="0";
+			    this.code=true;
+			}
+			
+		}
+	</script>
+</html>

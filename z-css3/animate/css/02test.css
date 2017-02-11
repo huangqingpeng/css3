@@ -1,0 +1,146 @@
+*{
+margin: 0;
+padding: 0;	
+}
+/*效果一*/
+.imgBox{
+	height:300px;
+	width:400px;
+	overflow:hidden;
+	position: relative;
+}
+.imgBox img{
+	transform: translate(0px,0);
+	-webkit-transform:translate(0px,0);
+	opacity: 1;
+	transition: all 0.33s;
+	 
+}
+.imgBox div{
+	transition: all 0.33s;
+}
+.imgBox.test01 .font{
+	position: absolute;
+	color:#fff;
+}
+
+.imgBox.test01 .font.a1{
+	font-size: 24px;
+	font-weight: bold;
+	top:50px;
+	left:50px;
+	transform: translate(-10px,-30px);
+}
+.imgBox.test01 .font.a2{
+	font-size: 14px;
+	font-weight: bold;
+	top:150px;
+	left:50px;
+	transform: translate(10px,10px);
+}
+
+.imgBox.test01 .borderbox{
+	border:2px solid deepskyblue;
+	width:80%;
+	height:80%;
+	position:absolute;
+	top:10%;
+	left:10%;
+	transform:translate(-600px,0) rotate(3600deg) ;
+}
+
+.imgBox.test01:hover img{
+	transform: translate(-50px,0);
+	-webkit-transform:translate(-50px,0);
+	opacity: 0.5;
+}
+
+.imgBox.test01:hover .font{
+	transform: translate(0,0);
+}
+
+/*.imgBox:hover .font.a2{
+	transform: translate(0,0);
+}*/
+
+.imgBox.test01:hover .borderbox{
+   transform:translate(0,0) rotate(0deg) ;
+}
+
+/*效果二*/
+
+.imgBox.test02 .font{
+	position: absolute;
+	color:deeppink;
+	font-weight: bold;
+	opacity: 0;
+}
+
+.imgBox.test02 .font.a1{
+	font-size: 36px;
+	top:50px;
+	left:50px;
+	transform: translate(-10px,-30px);
+}
+.imgBox.test02 .font.a2{
+	font-size: 18px;
+	top:90px;
+	left:50px;
+	transform: translate(10px,10px);
+}
+.imgBox.test02 .borderbox{
+	position: absolute;
+	border-color: #fff;
+	border-width: 2px;
+	border-style: solid;
+}
+.imgBox.test02 .borderbox.b1{
+	width:90%;
+	height:80%;
+	top:10%;
+	left:5%;
+	border-left: 0px;
+	border-right:0px;
+	transform: translate(-400px,0) scale(0.1);
+}
+.imgBox.test02 .borderbox.b2{
+	width:80%;
+	height:90%;
+	top:5%;
+	left:10%;
+	border-top: 0px;
+	border-bottom:0px;
+	transform: translate(0,-400px) scale(0.1);
+}
+.imgBox.test02:hover img{
+	transform: translate(-50px,0);opacity: 0.6;
+}
+.imgBox.test02:hover .font{
+	transform: translate(0,0) scale(1);opacity: 1;
+}
+.imgBox.test02:hover .borderbox{
+	transform: translate(0,0) scale(1);opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,261 @@
+/*媒体查询应用之微软官网*/
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+header{
+	height:60px;
+	background: #CCCCCC;
+}
+
+nav{
+	height:50px;
+	line-height:50px;
+	border:1px solid #e5e5e5;
+}
+.navBox{
+	height:50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	/*background: #000;*/
+}
+
+article{
+	background: #EEEEEE;
+	min-height:100px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.floatleft{
+	float:left;
+}
+.floatright{
+	float:right;
+}
+/*清除浮动方法*/
+.clearBoth:after{
+	clear: both;
+	content: ".";
+	height:0;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.leftNav a{
+	margin-right: 10px;
+	color: #666;
+}
+
+.rightNav{
+	height: 100%;
+	background: deepskyblue;
+}
+.rightNav .selectBox{
+	border:1px solid #666;
+	height:30px;
+	margin-top: 10px;
+	width:200px;
+}
+
+.rightNav .navBtn{
+	margin-top: 10px;
+	height:30px;
+	display: none;
+}
+.rightNav .selectBtn{
+	margin-top: 10px;
+	height:30px;
+	display: none;
+}
+.search-box{
+	height:0px;
+	background: #999;
+	overflow: hidden;
+	opacity: 0;
+	transition:all 0.33s;
+}
+@media screen and (max-width: 750px) {
+	.rightNav .btn{
+		display: inline-block;
+	}
+	.rightNav .selectBox{
+		display: none;
+	}
+	.leftNav .in_box{
+		display: none;
+	}
+}
+
+/*自定义弹框*/
+.dialog_box{
+	position:absolute;
+}
+.dialog_box.a{
+	background: #eee;
+	border:1px solid #666;
+}
+.dialog_box.b{
+	background: #eee;
+	border:1px solid #006;
+}
+.dialog_box .title{
+	height:35px;
+	text-align: left;
+	line-height: 35px;
+	display: none;
+}
+.dialog_box .close{
+	position:absolute;
+	top:0;
+	right:0;
+	width:35px;
+	text-align: center;
+	line-height: 35px;
+	height:35px;
+	cursor: pointer;
+	display: none;
+}
+
+.dialog_box.a .title{
+	background:#666;
+	color:#fff;
+}
+
+.dialog_box.a .close{
+	background:#900;
+	color:#fff;
+}
+
+.dialog_box.b .title{
+	background:#009;
+	color:#fff;
+}
+
+.dialog_box.b .close{
+	background:#006;
+	color:#fff;
+}
+
+.dialog_box.b .close:hover{
+	background:#66f;
+	color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

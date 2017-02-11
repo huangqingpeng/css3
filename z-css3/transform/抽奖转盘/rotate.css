@@ -1,0 +1,161 @@
+.rotateBox{
+	width:600px;
+	height:600px;
+	/*border:2px solid red;*/
+	border-radius: 600px;
+	position:absolute;
+	left:25%;
+	top:10%;
+	position: relative;
+}
+.rotateBox .panzi{
+	width:600px;
+	height:600px;
+}
+/*原状态，开始抽奖时的状态*/
+.rotateBox .panzi-box{
+	transition: all 10s;
+	transform: rotate(0deg);
+}
+/*快速恢复原状态*/
+.rotateBox .panzi-box.active{
+	transition: all 0.001s;
+	transform: rotate(90deg);
+}
+/*.rotateBox .panzi-box{
+	animation: myanimation 10s;
+	-webkit-animation: myanimation 10s;
+}
+@keyframes myanimation{
+	from{
+		transform: rotate(3600deg);
+	}
+	to{
+		transform: rotate(45deg);
+	}
+}
+@-webkit-keyframes myanimation{
+	from{
+		transform: rotate(1800deg);
+	}
+	
+	to{
+		transform: rotate(45deg);
+	}
+}*/
+
+
+.rotateBox .btn{
+	width:186px;
+	height:186px;
+	border-radius: 186px;
+	position:absolute;
+	left:34.4%;
+	top:34.5%;
+}
+
+.rotateBox .btn .start{
+	width:186px;
+	height:186px;
+}
+.rotateBox .zhizhen{
+	width:30px;
+	height:100px;
+	position:absolute;
+	left: 44.40%;
+	top:21.8%;
+}
+
+
+/*自定义弹框*/
+.dialog_box{
+	position:absolute;
+}
+.dialog_box.a{
+	background: #eee;
+	border:1px solid #666;
+}
+.dialog_box.b{
+	background: #eee;
+	border:1px solid #006;
+}
+.dialog_box .title{
+	height:35px;
+	text-align: left;
+	line-height: 35px;
+}
+.dialog_box .close{
+	position:absolute;
+	top:0;
+	right:0;
+	width:35px;
+	text-align: center;
+	line-height: 35px;
+	height:35px;
+	cursor: pointer;
+}
+
+.dialog_box.a .title{
+	background:#666;
+	color:#fff;
+}
+
+.dialog_box.a .close{
+	background:#900;
+	color:#fff;
+}
+
+.dialog_box.b .title{
+	background:#009;
+	color:#fff;
+}
+
+.dialog_box.b .close{
+	background:#006;
+	color:#fff;
+}
+
+.dialog_box.b .close:hover{
+	background:#66f;
+	color:red;
+}
+
+
+.dialog_box .content{
+	color:#FF0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>animate动画</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			#test01{
+				width:100px;
+				height:100px;
+				background: red;
+				animation:myanima 5s;
+				-webkit-animation:myanima 5s;
+			}
+			/*动画需要写兼容*/
+			/*@keyframes myanima{
+				from{
+					transform: rotate(0deg);
+				}
+				to{
+					transform: rotate(720deg);
+				}
+			}
+			@-webkit-keyframes myanima{
+				from{
+					transform: rotate(0deg);
+				}
+				to{
+					transform: rotate(720deg);
+				}
+			}*/
+			
+			@keyframes myanima{
+				0%{
+					transform:  translate(0,0) ;
+				}
+				20%{
+					transform: translate(150px,0);
+				}
+				100%{
+					transform: translate(150px,150px);
+				}
+			}
+			@-webkit-keyframes myanima{
+				0%{
+					transform:  translate(0,0);
+				}
+				20%{
+					transform: translate(150px,0);
+				}
+				100%{
+					transform: translate(150px,150px);
+				}
+			}
+			
+			#test02{
+				width:100px;
+				height:100px;
+				background:deepskyblue;
+			}
+			.a{
+				animation:ant 5s;
+				-webkit-animation:ant 5s;
+			}
+			@keyframes ant{
+				0%{
+					transform:rotate(360deg);
+				}
+				30%{
+					transform:rotate(720deg);
+				}
+				60%{
+					transform:rotate(1080deg);
+				}
+				100%{
+					transform:rotate(2100deg);
+				}
+			}
+			@-webkit-keyframes ant{
+				0%{
+					transform:rotate(360deg);
+				}
+				30%{
+					transform:rotate(720deg);
+				}
+				60%{
+					transform:rotate(1080deg);
+				}
+				100%{
+					transform:rotate(2100deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="test01"></div>
+		<div id="test02"></div>
+		<script>
+			document.querySelector("#test02").onclick=function(){
+				this.className="a";
+			}
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
